@@ -10,15 +10,13 @@ RSpec.describe OrderForm, type: :model do
 
   describe '配送先の保存' do
     context '配送先の保存ができる場合' do
-      it 'すべての値が正しく入力されていれば保存できること' do
+      it 'すべて値が入っている場合保存できる' do
         expect(@order_form).to be_valid
       end
       it 'user_idが空でなければ保存できる' do
-        @order_form.user_id = 1
         expect(@order_form).to be_valid
       end
       it 'item_idが空でなければ保存できる' do
-        @order_form.item_id = 1
         expect(@order_form).to be_valid
       end
       it 'postcodeが「3桁＋ハイフン＋4桁」の組み合わせであれば保存できる' do
