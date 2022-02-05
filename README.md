@@ -52,7 +52,7 @@
 ## addresses テーブル
 | Column        | Type       | Options                        |
 | -------       | ---------- | ------------------------------ |
-| post_code     | string     | null: false                    |
+| postcode      | string     | null: false                    |
 | prefecture_id | integer    | null: false                    |
 | city          | string     | null: false                    |
 | street        | string     | null: false                    |
